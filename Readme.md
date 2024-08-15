@@ -46,8 +46,8 @@ This project is a simple Library Management System built using Spring Boot and P
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/library-management-system.git
-   cd library-management-system
+   https://github.com/Elsokkary101/LMS.git
+   cd LMS
    ```
 
 2. Configure PostgreSQL:
@@ -56,12 +56,13 @@ This project is a simple Library Management System built using Spring Boot and P
    - Update the `application.properties` file with your PostgreSQL credentials:
 
      ```properties
-     spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
-     spring.datasource.username=your_username
-     spring.datasource.password=your_password
-
-     spring.jpa.hibernate.ddl-auto=update
-     spring.jpa.show-sql=true
+        spring.application.name=LMS
+        spring.datasource.url=jdbc:postgresql://localhost:5432/LMSDatabase
+        spring.datasource.username = postgres
+        spring.datasource.password = 1234
+        spring.jpa.show-sql = true
+        spring.mvc.throw-exception-if-no-handler-found=true
+        spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
      ```
 
 3. Build and run the application:
